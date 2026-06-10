@@ -1,0 +1,495 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vivedouro | Saúde Integrada de Excelência</title>
+<meta content="Vivedouro Saúde Integrada: O futuro da longevidade e bem-estar em São Paulo." name="description">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "tertiary-fixed": "#b7eaff",
+                        "primary-container": "#1a2b48",
+                        "tertiary-fixed-dim": "#80d2ef",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-background": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "outline": "#75777e",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#44474d",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed": "#d7e2ff",
+                        "tertiary": "#001a22",
+                        "surface-bright": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "primary": "#031632",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary": "#00696d",
+                        "on-secondary-fixed-variant": "#004f52",
+                        "outline-variant": "#c5c6ce",
+                        "on-secondary-container": "#037074",
+                        "inverse-on-surface": "#f1f1f1",
+                        "primary-fixed-dim": "#b6c7eb",
+                        "on-primary-fixed-variant": "#374765",
+                        "on-primary-fixed": "#081b38",
+                        "tertiary-container": "#00303d",
+                        "secondary-fixed": "#9df0f4",
+                        "surface-dim": "#dadada",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary-fixed": "#001f28",
+                        "background": "#f9f9f9",
+                        "deep-navy": "#0F172A",
+                        "on-tertiary-fixed-variant": "#004e60",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8293b5",
+                        "on-tertiary-container": "#489db8",
+                        "slate-gray": "#64748B",
+                        "glass-white": "rgba(255, 255, 255, 0.7)",
+                        "secondary-container": "#9df0f4",
+                        "inverse-surface": "#2f3131",
+                        "surface-container": "#eeeeee",
+                        "on-secondary-fixed": "#002021",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#81d4d8",
+                        "inverse-primary": "#b6c7eb",
+                        "surface-tint": "#4e5f7e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "max-width": "1440px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Geist"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Geist"],
+                        "headline-lg-mobile": ["Geist"],
+                        "headline-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .hero-overlay { background: linear-gradient(to right, rgba(3, 22, 50, 0.9) 0%, rgba(3, 22, 50, 0.4) 100%); }
+        .bento-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .hover-lift { transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease; }
+        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-glass-white backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="max-w-max-width mx-auto flex justify-between items-center px-margin-desktop py-4">
+<div class="font-headline-md text-headline-md font-bold text-primary">Vivedouro</div>
+<nav class="hidden md:flex items-center gap-8 font-label-md text-label-md">
+<a class="text-primary font-bold border-b-2 border-primary transition-colors duration-200" href="#hero">Início</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#specialties">Especialidades</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#about">Equipe</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#advantages">Vantagens</a>
+<a class="px-6 py-2 bg-primary text-white font-semibold rounded-full hover:bg-secondary transition-all active:scale-95" href="#contact">Agendar Consulta</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 hero-overlay z-10 transition-all duration-700 opacity-100 translate-y-0"></div>
+<img alt="Clínica Vivedouro" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoGWGoy9czPINbJbuaCUW2hCfMOFWEIby8IEBniHE3wF7bbiyLLp7_lhuyE-SDgLVReqVI0R2tsmE993cgANtYHcDjzOliR8REKXtRaBRuyjqkWuOIIvbSXwCYAfA8ZbbpzAR01n1Gd0Bg1F5Ts_z6sFiqrw88tuawAn3Bt4BQwKA0XQEwsfHSHF6VcVKi7AMIFHOiHQLVjQUCdeQO1IOuXdsffXXYZPZY6xBTBGQmYkeof0vQrqSeZeWs3yWOHu0w0OhKebAz3w">
+</div>
+<div class="relative z-20 max-w-max-width mx-auto px-margin-desktop w-full">
+<div class="max-w-2xl text-white transition-all duration-700 opacity-100 translate-y-0">
+<span class="inline-block px-4 py-1 bg-secondary/20 backdrop-blur-md border border-secondary/30 rounded-full font-label-sm text-label-sm uppercase tracking-widest mb-6">
+                    Excelência Integrada
+                </span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">
+                    Sua Saúde em Nível de Excelência
+                </h1>
+<p class="font-body-lg text-body-lg text-white/80 mb-10">
+                    Cuidado integral através de uma equipe multidisciplinar comprometida com a sua longevidade, bem-estar e performance em todas as fases da vida.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="px-10 py-4 bg-secondary text-white font-label-md text-label-md rounded-full text-center hover:opacity-90 transition-all shadow-xl" href="#contact">
+                        Agendar Consulta
+                    </a>
+<a class="px-10 py-4 glass-white border border-white/30 text-white font-label-md text-label-md rounded-full text-center hover:bg-white/10 transition-all" href="#specialties">
+                        Conhecer Especialidades
+                    </a>
+</div>
+</div>
+</div>
+<!-- Floating Stats -->
+<div class="absolute bottom-12 right-margin-desktop hidden lg:flex gap-8 z-20">
+<div class="glass-card p-6 rounded-xl border border-white/20 transition-all duration-700 opacity-100 translate-y-0">
+<div class="font-headline-md text-headline-md text-white">+10</div>
+<div class="text-white/60 font-label-sm uppercase">Especialidades</div>
+</div>
+<div class="glass-card p-6 rounded-xl border border-white/20 transition-all duration-700 opacity-100 translate-y-0">
+<div class="font-headline-md text-headline-md text-white">+20</div>
+<div class="text-white/60 font-label-sm uppercase">Profissionais</div>
+</div>
+</div>
+</section>
+<!-- Value Prop Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="text-center mb-20 transition-all duration-700 opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Um novo conceito em cuidado</h2>
+<div class="w-24 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter transition-all duration-700 opacity-100 translate-y-0">
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30 hover-lift">
+<div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Equipe Multidisciplinar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Médicos, dentistas, nutricionistas e fisioterapeutas trabalhando em sinergia para o seu plano de cuidado personalizado.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30 hover-lift">
+<div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Tecnologia Humanizada</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        O melhor da ciência médica aliado ao acolhimento e empatia que transformam a experiência do paciente.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30 hover-lift">
+<div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Longevidade</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Programas focados no envelhecimento saudável e na manutenção contínua do seu bem-estar físico e mental.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialties Section -->
+<section class="py-32 bg-white" id="specialties">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 transition-all duration-700 opacity-100 translate-y-0">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Serviços e Especialidades</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Tudo o que você precisa para viver com saúde, em um só lugar. Estrutura completa para consultas, exames e procedimentos.</p>
+</div>
+<a class="text-secondary font-label-md flex items-center gap-2 hover:underline" href="#">
+                    Ver todas especialidades <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter transition-all duration-700 opacity-100 translate-y-0">
+<!-- Specialty Card 1 -->
+<div class="group relative overflow-hidden rounded-2xl aspect-[0.94] hover-lift">
+<img alt="Nutrição" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtXclhDV836_3niVOazrvrlYpb08b1zuePc4JkqCe4Gt9lkx4pgZJBaNYhnENF1qCFayXOo3pasKt3ibAlPnEkIA8HtgFwU8kHfE3e7RZN2J4DSw0dObHSOjv2KbjE8Qt3sV6JkcgziliCtJFoN5nvKXLM3uZrPuJxkDxIIbpf9UCzAsxm925RdioxFJWCaSKD3mLTu9cmYPIrfBLwFxcQ1Etswt_ddJyWSg5RrmxaILpEI7tHniLaa">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-white">Nutrição</h4>
+<p class="text-white/70 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Planos alimentares personalizados para performance e saúde.</p>
+</div>
+</div>
+<!-- Specialty Card 2 -->
+<div class="group relative overflow-hidden rounded-2xl aspect-[0.94] hover-lift">
+<img alt="Fisioterapia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLvgB9-NPatTdLhBD0UKD1HwE8Pogyg08wjxprsqwChEzP7ytquOnQZm0bOU8u-LWppklMkq4_yUK0KkGdf_NJFZWg67Ca4bbcmKx0ziDtf22F_U_24ay3ugpFaF2erd0JNpB_pKurmdnITzGjRD-ELijUSvQMX3uzEASK3KM-8LzDWjQTbS5_SHuKx3KBAFuDQIV3fJJ3_Y0l_c9H9N6lTb0hovSnhB93-lH770CUFr1e2UQ0PBae-dfA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-white">Fisioterapia</h4>
+<p class="text-white/70 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Reabilitação e prevenção com as técnicas mais avançadas.</p>
+</div>
+</div>
+<!-- Specialty Card 3 -->
+<div class="group relative overflow-hidden rounded-2xl aspect-[0.94] hover-lift">
+<img alt="Academia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLumeXx2i0mWBH2eQpCjgO-oCZwRqk4Wu-IA1ywUF4XeilNBhFfOZA8yaucXTvZfzKuulQQ77jJyfqam9WD90Eg_5o2H54W-P1Up-VkLMa4n06MYrjvU6-Zkpxu_Su-e7QtVBXc9-IbvWlk3SLJeLl7heVi7AIgpY4coQg1z5d90N5a66K1AgrXgD50DxCwNbvvF0sVJb5Qdz8_s6aCIvQtJ5n-_fEbWm_JFzN_o_dmLAXV6Q7MdlycY">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-white">Academia</h4>
+<p class="text-white/70 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Treinamento assistido focado em saúde e recuperação física.</p>
+</div>
+</div>
+<!-- Specialty Card 4 -->
+<div class="group relative overflow-hidden rounded-2xl aspect-[0.94] hover-lift">
+<img alt="Estomaterapia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsGp9sdMzywTP75vaRZaFntNMmW3CmOds8uRHSovMf4t8j9FgdLouYItWewxsakasU0VkA-p3xEXOHllLi3Xg5GJdyxs_qj6MatNmib0t-HO0o-JgpSrpavxnYeWhRkuFbwxeswSbQIG-Qibaj11GUzgRKc14jTgeGpUJoZCIwR-siG25nWk4ygIELgR4-WhIpMG_rpaOdWwPXW2VkE9Pree2K4yhoK63ftpu8m3RFiN6TlTTpHAwrh">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-white">Estomaterapia</h4>
+<p class="text-white/70 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Cuidado especializado em feridas e estomias com humanização.</p>
+</div>
+</div>
+<!-- Specialty Card 5 -->
+<div class="group relative overflow-hidden rounded-2xl aspect-[0.94] hover-lift">
+<img alt="Odontologia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLuO_x4iPWgRJIQvZ_nz5kkVEyK8uSjn2O7dQKNtEntmBRo9TB29Lu0hhn1uyEj6MS619y9_bmEjLl0bN9wL3dh4JLdC55Qyl3aERB2JQVwCq_00OGLvDbazee0txen08PGh3B8Z7McvGNZ6jw0cIMq6yvRggH3mTt1LV1QEOLjt4Bi7JrafEgk6S-rLri7dP-sxGiMufFzRwgjh6CNNyxB7inAAhvzoC4YXrlC7UJkfUJyNXVyRdODnVA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-white">Odontologia</h4>
+<p class="text-white/70 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Saúde bucal integrada ao bem-estar sistêmico do corpo.</p>
+</div>
+</div>
+<!-- Specialty Card 6 -->
+<div class="group relative overflow-hidden rounded-2xl aspect-[0.94] hover-lift">
+<img alt="Exames" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtdgnsDYs0Xb1KsiAgquRXMi2RKiwC2JLX5wSmPOkFLN_6GHFVJphlBfJotGjiz8VKs3CjGxlqRNJpXxitR0DqGS8xn12q7B-URnhm-7PSd0eeD09OQIX80oHB_-IdTtvTMSXZZpkLPyPO5dBXM_aOzT3mGV_ikh23zMWlsjQzmkD-6U5og74xTZakETMHG579LaAB3fpAWX2v1MqfkCS0kOTDhpTgNrzwA5gBqQNFX0uq0yYb_naM0qw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-white">Exames</h4>
+<p class="text-white/70 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">Diagnóstico preciso com agilidade e equipamentos de ponta.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-32 bg-primary overflow-hidden" id="about">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="mb-20 text-center transition-all duration-700 opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Liderança e Visão</h2>
+<p class="font-body-lg text-body-lg text-white/60">Conectando você aos melhores profissionais da saúde.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 transition-all duration-700 opacity-100 translate-y-0">
+<!-- CEO 1 -->
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="w-full md:w-1/2 aspect-[1.08] relative">
+<img alt="Janaina Martins Ogando" class="w-full h-full object-cover rounded-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLtNDekCZSbKkSdbsTm_yj91E3gZ2gfucGQKOQm-hHgLXT4XEv5QXcNrpiXWoE8hwZaf8MpqlpkWE09A4JNOMyHxtvBHWOIysYlLVjR84VbDyhtuQlhdZnvr0KivgMtzDksuxud-Fq16gNnB7tDQdAf5Ck2Wqvjs9FboOi3pSlG_57sptCtJdLKWURNUVzPRiv6cgdv5dBPCFvTZ9TZdaMT8bcjb2yE4NM4s3o9A_zKP1G3AofBcOammug">
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-md text-headline-md text-white mb-1">Janaina Martins Ogando</h3>
+<p class="text-secondary font-label-sm uppercase tracking-wider mb-6">CEO &amp; Sócia Fundadora</p>
+<p class="text-white/70 font-body-md text-body-md mb-6 leading-relaxed">
+                            Enfermeira com especializações pelo Einstein e MBA em Administração Hospitalar. Atuou como diretora de Práticas Assistenciais e avaliadora global de qualidade em saúde.
+                        </p>
+<blockquote class="border-l-4 border-secondary pl-4 italic text-white/90">
+                            "Saúde não é apenas tratar doenças, é ativar o paciente a cuidar de si mesmo."
+                        </blockquote>
+</div>
+</div>
+<!-- CEO 2 -->
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="w-full md:w-1/2 aspect-[1.13] relative">
+<img alt="Dra. Aline Thomaz Soares" class="w-full h-full object-cover rounded-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLuMmVXV7k5o6BRuhHc3q4uSCE9hfRVyAGMepKbWLsGyZbX9e2Uyk0zUGxTfW_s-PYdOgWtuvImfsEyvellJmjF4X06SH2paFT1Qj5RSEjKuXk0B_rdEhogexfqpXE2JGYEBf5j6cke1CoxGDdZ0ed1B6EzmZMc22Urbtcy7zU_HpbBIAET23XoMRuq67Gyem2_2JpCgFkMVYk_442rdmTUKwcI_DaVvonKMq3qWIpumMkD6qCa8sqV5rQ">
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="font-headline-md text-headline-md text-white mb-1">Dra. Aline Thomaz Soares</h3>
+<p class="text-secondary font-label-sm uppercase tracking-wider mb-6">Sócia Fundadora &amp; Médica</p>
+<p class="text-white/70 font-body-md text-body-md mb-6 leading-relaxed">
+                            Doutora pela USP, Geriatra pela SBGG e gestora de equipes médicas. Especialista em longevidade e ex-CEO de grandes redes hospitalares.
+                        </p>
+<blockquote class="border-l-4 border-secondary pl-4 italic text-white/90">
+                            "Unimos medicina, ciência e humanidade para criar uma experiência única."
+                        </blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Advantages Section -->
+<section class="py-32 bg-white" id="advantages">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center transition-all duration-700 opacity-100 translate-y-0">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Por que escolher a Vivedouro?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Na clínica Vivedouro, cada detalhe foi pensado para oferecer uma experiência completa e acolhedora, simplificando o processo de tratamento.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary bg-secondary/10 p-2 rounded-full">check</span>
+<div>
+<span class="font-headline-md text-primary block text-lg">Cuidado Integral e Resolutivo</span>
+<span class="text-on-surface-variant">Consultas, exames e procedimentos em um único local.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary bg-secondary/10 p-2 rounded-full">check</span>
+<div>
+<span class="font-headline-md text-primary block text-lg">Experiência Comprovada</span>
+<span class="text-on-surface-variant">Profissionais altamente qualificados com mais de 20 anos de carreira.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary bg-secondary/10 p-2 rounded-full">check</span>
+<div>
+<span class="font-headline-md text-primary block text-lg">Estrutura de Vanguarda</span>
+<span class="text-on-surface-variant">Ambiente acolhedor com tecnologia de ponta para diagnóstico e treino.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary bg-secondary/10 p-2 rounded-full">check</span>
+<div>
+<span class="font-headline-md text-primary block text-lg">Programas Preventivos</span>
+<span class="text-on-surface-variant">Foco na saúde ativa e prevenção de doenças crônicas.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-secondary/5 rounded-3xl -rotate-2"></div>
+<img alt="Entrada Vivedouro" class="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLs8NC4yBac3EUAXMKy41Tg0Ai94ZMagncZpVkoRNQg4qDbXQv_rfig36VRhFw5SpjxsqKEpGz7TXc0Ch73_tPicUh-wRhZ77kZYBA7GvsxPSjfuFWOZJYYRjSwgxW5rX_Wf9iZ5epSfu9A8WjNxLO7ZJUlWtGgkKF86DODYNA_oKoQWtlYCa6jk4kD4csncKOdV8fAOkp21yn54Tl6sGckjH4PqsYhOakgIO1uPohGxj_gyiCgV77Jl5g">
+<div class="absolute bottom-8 -left-8 bg-white p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/30">
+<div class="text-secondary font-bold text-4xl mb-2">100%</div>
+<div class="text-primary font-bold mb-1">Acolhimento Familiar</div>
+<div class="text-on-surface-variant text-sm">Você e sua família são muito bem-vindos em todas as etapas.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact / CTA Section -->
+<section class="py-32 bg-surface" id="contact">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="bg-primary-container rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row transition-all duration-700 opacity-100 translate-y-0">
+<div class="lg:w-1/2 p-12 lg:p-20 text-white flex flex-col justify-center">
+<h2 class="font-display-lg text-headline-lg text-white mb-6">Agende seu futuro saudável hoje</h2>
+<p class="text-on-primary-container text-body-lg mb-10">Preencha o formulário para um pré-agendamento ou entre em contato diretamente pelo nosso canal de atendimento prioritário.</p>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl">call</span>
+<span class="font-body-md">11 2281-7695</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl">location_on</span>
+<span class="font-body-md">Rua Alfredo Pujol, 1117 Santana - São Paulo - SP</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-secondary text-white rounded-full font-bold hover:scale-105 transition-all w-fit" href="https://wa.me/5511943522507">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+                        Conversar no WhatsApp
+                    </a>
+</div>
+<div class="lg:w-1/2 bg-white p-12 lg:p-20">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase mb-2">Nome Completo</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-secondary focus:border-secondary transition-all" placeholder="Seu nome" type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase mb-2">E-mail</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-secondary focus:border-secondary transition-all" placeholder="exemplo@email.com" type="email">
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase mb-2">Assunto de interesse</label>
+<select class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-secondary focus:border-secondary transition-all">
+<option>Consultas Médicas</option>
+<option>Academia Vivedouro</option>
+<option>Exames e Diagnóstico</option>
+<option>Outros</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-primary uppercase mb-2">Mensagem</label>
+<textarea class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-secondary focus:border-secondary transition-all" placeholder="Como podemos ajudar você?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-secondary transition-all" type="submit">Enviar Solicitação</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant pt-24 pb-12">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-6">Vivedouro</div>
+<p class="text-on-surface-variant text-body-md mb-8">Saúde e bem-estar para você aproveitar cada etapa da vida com plenitude.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:text-secondary transition-colors border border-outline-variant/30" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:text-secondary transition-colors border border-outline-variant/30" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold mb-6">Acesso Rápido</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Especialidades</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Corpo Clínico</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Exames</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Academia</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold mb-6">Suporte</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Portal do Paciente</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Canal de Ouvidoria</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Agendamento</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Contato</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-primary font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Termos de Uso</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">Privacidade</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-all" href="#">LGPD</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-body-md font-body-md">© 2024 Vivedouro Integrated Health. All rights reserved. Precision Wellness.</p>
+<div class="flex gap-8 text-on-surface-variant text-sm">
+<span class="">Precision. Care. Longevity.</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+
+</body></html>
